@@ -1,0 +1,13 @@
+﻿@model IEnumerable<StandardProducts.Models.Product>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>total count: @Model.Count()</h2>
+
+<ul>
+@foreach (var item in Model)
+{
+    <li>@item.Name</li>
+}
+</ul>
